@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app-demo-1:
+    build:
+      context: app-demo-1
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    image: ${ECR_REGISTRY}/${ECR_REPOSITORY}:app-demo-1-${BUILD_VERSION}
+
+  app-demo-2:
+    build:
+      context: app-demo-2
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    image: ${ECR_REGISTRY}/${ECR_REPOSITORY}:app-demo-2-${BUILD_VERSION}
