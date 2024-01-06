@@ -9,7 +9,7 @@ app_demo_1:
     repository: 845563949565.dkr.ecr.ap-southeast-1.amazonaws.com/aws-ecr-seminar
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "app-demo-1-main-f41e687"
+    tag: "app-demo-1-main-6294b7c"
   name: "app-demo-1"
   replicaCount: 1
 
@@ -18,7 +18,7 @@ app_demo_2:
     repository: 845563949565.dkr.ecr.ap-southeast-1.amazonaws.com/aws-ecr-seminar
     pullPolicy: IfNotPresent
     # Overrides the image tag whose default is the chart appVersion.
-    tag: "app-demo-2-main-f41e687"
+    tag: "app-demo-2-main-6294b7c"
   name: "app-demo-2"
   replicaCount: 2
 
